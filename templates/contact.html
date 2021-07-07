@@ -4,9 +4,9 @@
 
 {% block body %} 
 <!-- <img class = " container-fluid" src="/static/img/1.png" class="d-block w-100" alt="..." width="0px" height="500px"> -->
-<h1 class = "text-center my-4"> Contact Form</h1>
-<div class = container style="padding: 4rem;">
-
+<div style="background-color:#62a065c7 ">
+<h1 class = "text-center" style="color:white"> Contact Form</h1>
+<div class = "container"  style="padding: 4" >
 <form method="post" action="/contact">
   {% csrf_token %}
   <div class="mb-3">
@@ -80,5 +80,6 @@
   </div>
   <button style="flex: content;" type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 </div>
 {% endblock body %}
