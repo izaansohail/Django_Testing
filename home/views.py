@@ -6,11 +6,7 @@ from django.contrib import messages
 # Create your views here.
 
 def index(request):
-    context  = {
-        'variable1' : "this is sent",
-        'variable2' : "My name is Izaan"
-    }
-    return render(request, 'index.html',context)
+    return render(request, 'homescreen.html')
     # return HttpResponse("this is homepage")
 
 def about(request):
