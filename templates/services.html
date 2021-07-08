@@ -1,5 +1,28 @@
-<!-- {% extends "base.html" %} -->
+{% extends "base.html" %}
 
-{% block title %} Services {% endblock title %}
+{% block title %} About Us {% endblock title %}
 
-{% block body %} this is Services block {% endblock body %}
+{% block body %} 
+<!-- <img class = " container-fluid" src="/static/img/1.png" class="d-block w-100" alt="..." width="0px" height="500px"> -->
+<div style="background-color: wheat">
+<h1 class = "text-center" style="color:black; padding-top: 30px;"><b> Report Generation Screen</b></h1>
+<div class="mb-3" style="padding-left: 400px; padding-right: 400px; margin-top: 70px;">
+    <label for="Check-Out" class="form-label"><b>Report on Date</b></label>
+    <input type="date" class="form-control" id="Check-Out" name="Check-Out" placeholder="Enter Your Check-Out Date Here">
+  </div>
+<button style="flex: content; padding-left: 40px; padding-right: 40px ;margin-left: 600px; margin-top: 20px; margin-bottom: 40px;" type="submit" class="btn btn-primary">Generate</button>
+<div class="mb-3" style="padding-left: 400px; padding-right: 400px; margin-bottom: 100px;">
+    <label for="Contact_Number" class="form-label"><b>Report on a Duration:</b></label>
+    
+    <div class="mb-3" style="padding-left: 0px; padding-right: 0px;">
+        <label for="Check-Out" class="form-label"><b>Starting Date:</b></label>
+        <input type="date" class="form-control" id="Check-Out" name="Check-Out" placeholder="Enter Your Check-Out Date Here">
+    </div>
+    <div class="mb-3" style="padding-left: 0px; padding-right: 0px;">
+        <label for="Check-Out" class="form-label"><b>Ending Date </b></label>
+        <input type="date" class="form-control" id="Check-Out" name="Check-Out" placeholder="Enter Your Check-Out Date Here">
+    </div>
+  </div>
+  <button style="flex: content; padding-left: 40px; padding-right: 40px ;margin-left: 600px; margin-top: 20px; margin-bottom: 5px;" type="submit" class="btn btn-primary">Generate</button>
+</div>
+{% endblock body %}

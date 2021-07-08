@@ -12,4 +12,4 @@ class Contact(models.Model):
     purpose = models.CharField(max_length=200,default=None,null=True)
     img_location = models.CharField(max_length=200,default=None,null=True)
     def __str__(self):
-        return self.name
+        return str(self.name)

@@ -20,6 +20,7 @@ def services(request):
 def contact(request):
     if request.method == "POST":
         name = request.POST.get('name')
+        print(name)
         address = request.POST.get('address')
         organization = request.POST.get('organization')
         contact_number = request.POST.get('contact_number')
