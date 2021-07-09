@@ -19,17 +19,17 @@ def services(request):
 
 def contact(request):
     if request.method == "POST":
-        name = request.POST.get('name')
-        print(name)
-        address = request.POST.get('address')
-        organization = request.POST.get('organization')
-        contact_number = request.POST.get('contact_number')
-        checkin = request.POST.get('checkin')
-        checkout = request.POST.get('checkout')
-        contact_person = request.POST.get('contact_person')
-        purpose = request.POST.get('purpose')
-        img_location = request.POST.get('img_location')
-        contact = Contact(name=name,address=address,
+        name = request.POST.get('Name')
+        cnic = request.POST.get('cnic')
+        address = request.POST.get('Address')
+        organization = request.POST.get('Organization')
+        contact_number = request.POST.get('Contact_Number')
+        checkin = request.POST.get('Check-In')
+        checkout = request.POST.get('Check-Out')
+        contact_person = request.POST.get('Contact_Person')
+        purpose = request.POST.get('Purpose')
+        img_location = request.POST.get('Img_lLocation')
+        contact = Contact(name=name,cnic = cnic, address=address,
         organization=organization,contact_number=contact_number,checkin=checkin,checkout=checkout,
         contact_person=contact_person,purpose=purpose,img_location=img_location)
         contact.save()
